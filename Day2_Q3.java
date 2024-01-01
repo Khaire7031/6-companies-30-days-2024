@@ -10,7 +10,8 @@ public class Day2_Q3 {
             alist.add(new ArrayList<>(current));
             return;
         }
-
+        
+        
         for (int i = start; i <= 9; i++) {
             if (!current.contains(i) && sum + i <= n) {
                 current.add(i);
