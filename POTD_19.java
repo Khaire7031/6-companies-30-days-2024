@@ -67,10 +67,27 @@ public class POTD_19 {
         Collections.sort(alist);
         return alist;
     }
+    public int maxSumAfterPartitioning(int[] arr, int k) {
+        int ans = 0;
+        for(int i=0;i<arr.length-k;i++){
+            int maxSum = 0;
+            for(int j=i;j<i+k;j++){
+                maxSum= Math.max(maxSum, arr[j]);
+            }
+            ans +=maxSum;
+            System.out.println(ans);
+        }
+        return 0;
+    }
     
     public static void main(String[] args) {
         System.out.println("        1-FEB-2024");
         System.out.println("Ans : "+sequentialDigits(100,300));
         // System.out.println("Ans : "+sequentialDigits(1000,13000));
+        ArrayList<Integer> alist = new ArrayList<>();
+
+        alist.add(5);
+        System.out.println();
+        alist.remove(alist.size()-1);
     }
 }
