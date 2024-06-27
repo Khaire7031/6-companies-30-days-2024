@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class POTD_22 {
     static int ans = 101;
