@@ -1,6 +1,4 @@
 
-import java.util.*;
-
 public class POTD_10 {
     public static int sumSubarrayMins(int[] arr) {
         int ans = 0;

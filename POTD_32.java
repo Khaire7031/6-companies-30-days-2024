@@ -80,8 +80,8 @@ public class POTD_32 {
     public static void main(String[] args) {
         System.out.println("23 May 2024");
         // int arr[] = { 2, 4, 6 };
-        int arr[] = { 4, 2, 5, 9, 10, 3 };
-        int k = 1;
+        // int arr[] = { 4, 2, 5, 9, 10, 3 };
+        // int k = 1;
         String str = "abcdefcba";
         // System.out.println(str.substring(0, 4));
         System.out.println("Ans : " + kPalindrome(str, str.length(), 1));

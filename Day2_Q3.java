@@ -1,17 +1,15 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Day2_Q3 {
     static List<List<Integer>> alist = new ArrayList<>();
+
     public static void help(List<Integer> current, int k, int n, int start, int sum) {
         if (current.size() == k && sum == n) {
             alist.add(new ArrayList<>(current));
             return;
         }
-        
-        
+
         for (int i = start; i <= 9; i++) {
             if (!current.contains(i) && sum + i <= n) {
                 current.add(i);

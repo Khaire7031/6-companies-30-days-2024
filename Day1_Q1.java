@@ -8,42 +8,38 @@
     Given divisor1, divisor2, uniqueCnt1, and uniqueCnt2, return the minimum possible maximum integer that can be present in either array.
 */
 
-
-import java.util.*;
-class Day1_Q1{
+class Day1_Q1 {
 
     // Failed
 
-
-
-    // public static int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {
-    //     // HashSet<Integer> set1 = new HashSet<>();
-    //     // HashSet<Integer> set2 = new HashSet<>();
-    //     HashSet<Integer> set3 = new HashSet<>();
-    //     int i = 0,value = 0,size1=0,size2=0;
-    //     while((size1+size2)<(uniqueCnt1+uniqueCnt2)){
-    //         value++;
-    //         if(value%divisor1!=0 && size1<uniqueCnt1){
-    //             // System.out.println(value);
-    //             // set1.add(value);
-    //             size1++;
-    //         }else if(value%divisor2!=0 && size2<uniqueCnt2){
-    //             // System.out.println("--> "+value);
-    //             // set2.add(value);
-    //             size2++;
-    //         }else{
-    //             set3.add(value);
-    //         }
-    //         i++;
-    //     }
-
-    //     // System.out.println(set1+"  :::  "+set2+"  ++  "+set3); //14
-    //     return value;
+    // public static int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int
+    // uniqueCnt2) {
+    // // HashSet<Integer> set1 = new HashSet<>();
+    // // HashSet<Integer> set2 = new HashSet<>();
+    // HashSet<Integer> set3 = new HashSet<>();
+    // int i = 0,value = 0,size1=0,size2=0;
+    // while((size1+size2)<(uniqueCnt1+uniqueCnt2)){
+    // value++;
+    // if(value%divisor1!=0 && size1<uniqueCnt1){
+    // // System.out.println(value);
+    // // set1.add(value);
+    // size1++;
+    // }else if(value%divisor2!=0 && size2<uniqueCnt2){
+    // // System.out.println("--> "+value);
+    // // set2.add(value);
+    // size2++;
+    // }else{
+    // set3.add(value);
+    // }
+    // i++;
     // }
 
-    
+    // // System.out.println(set1+" ::: "+set2+" ++ "+set3); //14
+    // return value;
+    // }
+
     public static int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {
-        long l = 1, r = (long)1e15, ans = r, d1 = divisor1, d2 = divisor2, cnt1 = uniqueCnt1, cnt2 = uniqueCnt2;
+        long l = 1, r = (long) 1e15, ans = r, d1 = divisor1, d2 = divisor2, cnt1 = uniqueCnt1, cnt2 = uniqueCnt2;
         long g = gcd(d1, d2), lcm = (d1 * d2) / g;
 
         while (l <= r) {
@@ -76,7 +72,7 @@ class Day1_Q1{
             }
         }
 
-        return (int)ans;
+        return (int) ans;
     }
 
     private static long gcd(long a, long b) {
@@ -88,12 +84,11 @@ class Day1_Q1{
         return a;
     }
 
-     
     public static void main(String[] args) {
         System.out.println("        Question 1: ");
         // int divisor1 = 2, divisor2 = 4, uniqueCnt1 = 8, uniqueCnt2 = 2;
         // int divisor1 = 2, divisor2 = 7, uniqueCnt1 = 1, uniqueCnt2 = 3;
-        int divisor1 = 12, divisor2 = 3, uniqueCnt1 = 2, uniqueCnt2 = 10;//14
-        System.out.println("Ans : "+minimizeSet(divisor1, divisor2, uniqueCnt1, uniqueCnt2));
+        int divisor1 = 12, divisor2 = 3, uniqueCnt1 = 2, uniqueCnt2 = 10;// 14
+        System.out.println("Ans : " + minimizeSet(divisor1, divisor2, uniqueCnt1, uniqueCnt2));
     }
 }

@@ -11,7 +11,7 @@ public class POTD_36 {
     }
 
     public static long getCount(int n) {
-        long ans = 0;
+        // long ans = 0;
         ArrayList<ArrayList<Integer>> aList = new ArrayList<>(Arrays.asList(
                 new ArrayList<>(Arrays.asList(8)),
                 new ArrayList<>(Arrays.asList(2, 4)),

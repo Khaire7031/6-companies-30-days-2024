@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Stack;
 
 public class POTD_39 {
 
@@ -79,7 +78,8 @@ public class POTD_39 {
     }
 
     public int minOperations(int[] nums) {
-        int ans = 0, n = nums.length;
+        // int ans = 0,
+        int n = nums.length;
         for (int i = 0; i < n - 3; i++) {
             if (nums[i] == 0) {
                 nums[i] = (nums[i] == 0) ? 1 : 0;

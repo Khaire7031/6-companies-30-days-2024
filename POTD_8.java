@@ -44,9 +44,6 @@ public class POTD_8{
 
 */
 
-
-import java.util.*;
-
 public class POTD_8 {
     static int count = 0;
 
@@ -56,7 +53,7 @@ public class POTD_8 {
         for (int i = 0; i < n; i++) {
             int minMax[] = new int[2];
             help(gallery, i, minMax);
-            // System.out.println(minMax[0] + "  :  " + minMax[1]);
+            // System.out.println(minMax[0] + " : " + minMax[1]);
             if (minMax[0] <= 0 && minMax[1] >= n - 1) {
                 ans = Math.min(ans, count);
             }
@@ -89,7 +86,7 @@ public class POTD_8 {
 
     public static void main(String[] args) {
         System.out.println("        18 - Jan - 2024");
-        int n = 6, gallery[] = {-1, 2, 2, -1, 0, 0};
+        int n = 6, gallery[] = { -1, 2, 2, -1, 0, 0 };
         System.out.println("Ans : " + min_sprinklers(gallery, n));
     }
 }

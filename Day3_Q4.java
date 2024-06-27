@@ -7,8 +7,8 @@
 
 public class Day3_Q4 {
     public static String printMinNumberForPattern(String S){
-        int max = 1+ S.length();
-        int arr[] = new int[max];
+        // int max = 1+ S.length();
+        // int arr[] = new int[max];
 
         return null;
     }
