@@ -4,7 +4,7 @@
 Welcome to my repository for the 6 Companies 30 Days Challenge organized by Arsh Goyal. This challenge focuses on revising Data Structures and Algorithms, targeting some of the most frequently asked questions by top tech companies.
 
 ## Challenge Details
-- **Start Date:** 1st January 2024
+- **Start Date:** 1st January 2024 
 - **End Date:** Ongoing
 - **Companies Covered:** Goldman Sachs (as of now)
 
