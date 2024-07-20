@@ -28,6 +28,6 @@ Feel free to connect and collaborate. Let's learn and grow together!
 
 ## Contact
 For any questions or collaborations, feel free to reach out:
-- LinkedIn: [Your LinkedIn Profile]([https://www.linkedin.com/in/yourprofile/](https://www.linkedin.com/in/pranav-khaire-java-developer/))
+- LinkedIn: [Your LinkedIn Profile]([https://www.linkedin.com/in/yourprofile/](https://www.linkedin.com/in/pranav-khaire-java-developer/])
 
 Happy coding!
