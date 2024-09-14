@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Demo {
+public class Truein {
 
     public static String reverseString(String str) {
         String arr[] = str.split(" ");
